@@ -19,7 +19,7 @@ suivre ce tutoriel [ici](https://www.contentful.com/r/knowledgebase/gatsbyjs-and
 
 6/ Accéder à l'application <br />
 
-Une fois le dépôt cloné, accédez à la ligne de commande directement par le terminal ou en ouvrant le terminal dans votre éditeur de code. Vous devriez vous retrouver dans le dossier 'root' (celui où vous pouvez trouver les fichiers **package.json** et **package-lock.json**). Une fois là, installez toutes les dépendances (plugins) que le projet utilise. Pour ce faire, lancez **npm install** et soyez prêt à attendre quelques minutes. Enfin, lancez **gatsby develop** puis allez dans votre navigateur web de choix et ouvrez l’url localhost:8000. Vous devriez y voir une version de travail du projet.
+Une fois le dépôt cloné, accédez à la ligne de commande directement par le terminal ou en ouvrant le terminal dans votre éditeur de code. Vous devriez vous retrouver dans le dossier 'root' (celui où vous pouvez trouver les fichiers **package.json** et **package-lock.json**). Une fois là, installez toutes les dépendances (plugins) que le projet utilise. Pour ce faire, lancez **yarn install** et soyez prêt à attendre quelques minutes. Enfin, lancez **yarn dev** puis allez dans votre navigateur web de choix et ouvrez l’url localhost:8000. Vous devriez y voir une version de travail du projet.
 
 ### Travailler sur le code
 
@@ -31,7 +31,7 @@ Le code sur lequel vous allez travailler est écrit en React (un framework JavaS
 
 ### Changement de code
 
-Idéalement, vous ne voudrez pas travailler sur la branche **master**. Créez plutôt une branche et travaillez dessus. Ici, l'interface GitHub pourra vous aider à nouveau. Le nom que vous donnez à cette branche n’est pas très important, mais habituellement il aide à lui donner un nom avec ce que vous prévoyez de faire par ex. 'add-sidebar' (ainsi appelé 'feature branch').
+Idéalement, vous ne voudrez pas travailler sur la branche **main**. Créez plutôt une branche et travaillez dessus. Ici, l'interface GitHub pourra vous aider à nouveau. Le nom que vous donnez à cette branche n’est pas très important, mais habituellement il aide à lui donner un nom avec ce que vous prévoyez de faire par ex. 'add-sidebar' (ainsi appelé 'feature branch').
 
 Quand vous êtes sur cette branche, vous pouvez jouer avec le code autant que vous voulez. Ne vous inquiétez pas de casser des choses. Lancez la commande **npm run checks** avant de faire un commit qui vous avertira si vous avez cassé des choses. Lorsque vous faites des commits, essayez de les garder aussi petits que possible. Les changements d’une ligne sont des commits valides ! Si vous utilisez 'and' dans un message de validation, le commit est probablement trop gros.
 
@@ -43,12 +43,7 @@ Si vous pensez en avoir fini avec la fonction sur laquelle vous travaillez, vous
 
 ## Features
 
-- **page d'accueil** - page d'accueil classique de blog comprenant une introduction au contenu du blog, une présentation de l'auteur principal et un widget comprenant les derniers articles parus
-- **choix d'un théme** - page comprenant une liste des différents thémes abordés dans le blog
-- **choix d'un articles** - page comprenant une liste des articles selon le théme choisi
-- **affichage d'un article** - page comprenant un article avec la possibilité de choisir un article précédent ou suivant dans le même théme
-- **fonction recherche** - possibilité de faire une recherche d'une liste d'articles qui comportent le mot recherché par l'intérmédiiare de la barre de recherche
-- **formulaire de contact** - possibilité d'envoi d'un message par l'utilisateur que l'on reçoit dans la boîte mail parametrée au préalable
+A venir
 
 ## Credits
 
