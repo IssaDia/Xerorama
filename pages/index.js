@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
-import Head from 'next/head'
-import Post from '../components/post'
-import Image from 'next/image'
+import Header from '../components/header'
+import Layout from '../components/layout'
 
 const contentful = require('contentful')
 const client = contentful.createClient({
@@ -27,24 +26,16 @@ function HomePage() {
   }, [])
 
   return (
-    <>
-      <Head>
-        <title>Xerorama</title>
-        <link rel="stylesheet" href="https://css.zeit.sh/v1.css" type="text/css" />
-      </Head>
+    <Layout>
+      <Header />
       {posts.length > 0
-        ? posts.map((p) => (
-            <Post
-              alt={p.fields.alt}
-              date={p.fields.date}
-              key={p.fields.title}
-              image={p.fields.image}
-              title={p.fields.title}
-              url={p.fields.url}
-            />
+        ? posts.map((post) => (
+            <h2 key={post.index} className="text-gray-600">
+              {post.fields.title}
+            </h2>
           ))
         : null}
-    </>
+    </Layout>
   )
 }
 
