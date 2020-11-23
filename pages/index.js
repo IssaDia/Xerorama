@@ -28,13 +28,6 @@ function HomePage() {
   return (
     <Layout>
       <Header />
-      {posts.length > 0
-        ? posts.map((post) => (
-            <h2 key={post.index} className="text-gray-600">
-              {post.fields.title}
-            </h2>
-          ))
-        : null}
     </Layout>
   )
 }

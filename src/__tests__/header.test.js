@@ -1,5 +1,4 @@
-import { render, screen } from '@testing-library/react'
-import '@testing-library/jest-dom/extend-expect'
+import { render } from '@testing-library/react'
 import Header from '../../components/header'
 
 describe('Header', () => {
@@ -18,6 +17,7 @@ describe('Header', () => {
     expect(getByTestId('brandName-element')).toHaveTextContent('Xerorama')
   })
   test('it renders an icon on menu', () => {
-    render(<Header />)
+    const { getByTestId } = render(<Header />)
+    expect(getByTestId('logo-element')).toBeInTheDocument()
   })
 })
