@@ -1,8 +1,12 @@
 module.exports = {
-  plugins: ['tailwindcss', 'postcss-preset-env'],
-  variants: {
-    extend: {
-      scale: ['focus-within']
+  plugins: [
+    'tailwindcss',
+    'postcss-preset-env',
+    {
+      stage: 1,
+      features: {
+        'focus-within-pseudo-class': false
+      }
     }
-  }
+  ]
 }
