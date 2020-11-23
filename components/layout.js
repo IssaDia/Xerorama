@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <div className="container">
       <Head>
-        <title>Xerorama</title>
+        <title>Xeroramas</title>
         <link
           href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
           rel="stylesheet"
