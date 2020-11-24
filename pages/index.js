@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Layout from '../components/layout'
 import Welcome from '../organisms/welcome'
+import WelcomeForm from '../organisms/welcome-form'
 
 const contentful = require('contentful')
 const client = contentful.createClient({
@@ -27,7 +28,7 @@ function HomePage() {
 
   return (
     <Layout>
-      <Welcome />
+      <WelcomeForm />
     </Layout>
   )
 }

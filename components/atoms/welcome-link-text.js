@@ -1,5 +1,5 @@
 import React from 'react'
 
 export default function WelcomeLinktext({ text }) {
-  return <p className="text-sm">{text}</p>
+  return <p className="text-xs lg:text-sm">{text}</p>
 }
