@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import WelcomeText from '../../components/atoms/welcome-text'
 import WelcomeLink from '../../components/molecules/welcome-link'
-$import WelcomeLinkContainer from '../../organisms/welcome-link-container'
+import WelcomeLinkContainer from '../../organisms/welcome-link-container'
 
 describe('Welcome', () => {
   test('it renders Welcome Text', () => {
