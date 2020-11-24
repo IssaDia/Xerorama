@@ -12,8 +12,8 @@ suivre ce tutoriel [ici](https://nextjs.org/docs)
 2/ Récupérer le code source (sur votre machine) <br />
 git clone https://github.com/IssaDia/Xerorama.git
 
-3/ Installer et créer un compte Contentful <br />
-suivre ce tutoriel [ici](https://www.contentful.com/r/knowledgebase/gatsbyjs-and-contentful-in-five-minutes/)
+3/ Créer un compte Contentful et connexter Contentful à son application <br />
+suivre ce tutoriel [ici](https://vercel.com/guides/deploying-next-and-contentful-with-vercel)
 
 5/ Renommer le fichier .env.exemple en .env et compléter le fichier avec vos identifiants <br />
 
@@ -27,7 +27,7 @@ Notez que cette partie suppose que vous avez une compréhension de base de la te
 
 ### Conditions préalables
 
-Le code sur lequel vous allez travailler est écrit en React (un framework JavaScript) et en utilisant Gatsby un framework surcouche de React qui facilite la création de sites web (ou d’applications de bureau) qui fonctionnent. Assurez-vous de lire rapidement la documentation pour vous familiariser avec les deux cadres. Mais ne vous inquiétez pas trop de tout lire. Il suffit de plonger dans le code et apprendre en faisant. Vous ne pouvez rien casser et même si vous l’avez fait, il est facile d’annuler l’erreur.
+Le code sur lequel vous allez travailler est écrit en React (un framework JavaScript) et en utilisant NextJs un framework surcouche de React qui facilite la création de sites web (ou d’applications de bureau) qui fonctionnent. Assurez-vous de lire rapidement la documentation pour vous familiariser avec les deux cadres. Mais ne vous inquiétez pas trop de tout lire. Il suffit de plonger dans le code et apprendre en faisant. Vous ne pouvez rien casser et même si vous l’avez fait, il est facile d’annuler l’erreur.
 
 ### Changement de code
 

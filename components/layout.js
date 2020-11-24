@@ -6,9 +6,10 @@ export default function Layout({ children }) {
   return (
     <div className="container">
       <Head>
-        <title>Xeroramas</title>
+        <title>Xerorama</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Modak&family=Nerko+One&display=swap"
           rel="stylesheet"
         />
       </Head>

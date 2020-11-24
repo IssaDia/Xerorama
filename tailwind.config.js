@@ -2,9 +2,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      noticia: ['Noticia Text'],
-      serif: ['"PT serif"'],
-      playfair: ['"Playfair Display serif"']
+      modak: ['Modak', 'cursive']
     },
     extend: {
       maxHeight: {

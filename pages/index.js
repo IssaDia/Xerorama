@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import Header from '../components/header'
 import Layout from '../components/layout'
+import Welcome from '../organisms/welcome'
 
 const contentful = require('contentful')
 const client = contentful.createClient({
@@ -27,7 +27,7 @@ function HomePage() {
 
   return (
     <Layout>
-      <Header />
+      <Welcome />
     </Layout>
   )
 }

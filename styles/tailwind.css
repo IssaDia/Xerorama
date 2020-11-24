@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.brandName {
+  font-family: 'Modak', cursive;
+
+}
+
+.panel {
+  transform: perspective(1500px) rotateY(-5deg) rotateX(25deg) rotateZ(20deg);
+}
+
+.panel--content:hover {
+  transform: perspective(1500px) translateZ(100px) translateX(-10px) translateY(-10px);
+  -webkit-box-shadow: 25px 14px 29px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 25px 14px 29px 0px rgba(0, 0, 0, 0.35);
+}
+
+.panel--content {
+  transform: perspective(1500px) translateZ(0);
+  -webkit-box-shadow: 11px 10px 30px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 11px 10px 30px 0px rgba(0, 0, 0, 0.2);
+}
