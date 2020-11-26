@@ -6,12 +6,15 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import navLinks from '../config/navLinks'
 import NavLink from './atoms/nav-link'
 import Link from 'next/link'
+import { useFetchUser } from '../utils/user'
 
 config.autoAddCss = false
 library.add(fas)
 
 export default function Header({ appTitle }) {
   const [isExpanded, toggleExpansion] = useState(false)
+  const { user, loading } = useFetchUser()
+  console.log(user)
   return (
     <nav
       data-testid="navbar-element"
