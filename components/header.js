@@ -48,7 +48,7 @@ export default function Header({ appTitle }) {
         id="nav-content">
         <ul className="list-reset lg:flex justify-end flex-1 items-center">
           {navLinks.map((navLink, index) => (
-            <li className="mr-3" key={index}>
+            <li className="mr-3 text-white" key={index}>
               <NavLink path={navLink.path} label={navLink.label} icon={navLink.icon} />
             </li>
           ))}
