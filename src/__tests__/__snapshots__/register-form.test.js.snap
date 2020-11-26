@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RegisterForm spec it renders the register form 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="w-full px-3"
+  >
+    <div
+      className="flex items-center border-b border-gray-900 py-2"
+    >
+      <input
+        className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+        id="email"
+        name="email"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Tapez votre @"
+        type="email"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="w-full px-3"
+  >
+    <div
+      className="flex items-center border-b border-gray-900 py-2"
+    >
+      <input
+        className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+        id="firstName"
+        name="firstName"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Tapez votre Prénom"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="w-full px-3"
+  >
+    <div
+      className="flex items-center border-b border-gray-900 py-2"
+    >
+      <input
+        className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+        id="lastName"
+        name="lastName"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Tapez votre Nom"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="w-full px-3"
+  >
+    <div
+      className="px-3 mb-6 md:mb-0"
+    >
+      <div
+        className="block"
+      >
+        <span
+          className="text-gray-700"
+        >
+          Vous êtes : 
+        </span>
+        <div
+          className="mt-2"
+        >
+          <div>
+            <label
+              className="inline-flex items-center"
+            >
+              <input
+                checked={false}
+                name="category"
+                onBlur={[Function]}
+                onChange={[Function]}
+                type="radio"
+                value="1"
+              />
+              <span
+                className="ml-2"
+              >
+                Mentor
+              </span>
+            </label>
+          </div>
+          <div>
+            <label
+              className="inline-flex items-center"
+            >
+              <input
+                checked={false}
+                name="category"
+                onBlur={[Function]}
+                onChange={[Function]}
+                type="radio"
+                value="2"
+              />
+              <span
+                className="ml-2"
+              >
+                Apprenant
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="w-full px-3"
+  >
+    <div
+      className="flex items-center border-b border-gray-900 py-2"
+    >
+      <input
+        autoComplete="true"
+        className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+        id="password"
+        name="password"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Tapez votre mot de passe"
+        type="password"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="w-full px-3"
+  >
+    <div
+      className="flex items-center border-b border-gray-900 py-2"
+    >
+      <input
+        autoComplete="true"
+        className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+        id="passwordConfirmation"
+        name="passwordConfirmation"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Confirmez le mot de passe"
+        type="password"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="w-full text-center"
+  >
+    <button
+      disabled={false}
+      type="submit"
+    >
+      Submit
+    </button>
+  </div>
+</form>
+`;

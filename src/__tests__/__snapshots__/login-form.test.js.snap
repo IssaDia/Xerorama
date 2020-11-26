@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm spec it renders the login form 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="w-full px-3"
+  >
+    <div
+      className="flex items-center border-b border-gray-900 py-2"
+    >
+      <input
+        className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+        id="email"
+        name="email"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Tapez votre @"
+        type="email"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="w-full px-3"
+  >
+    <div
+      className="flex items-center border-b border-gray-900 py-2"
+    >
+      <input
+        autoComplete="true"
+        className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+        id="password"
+        name="password"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Tapez votre mot de passe"
+        type="password"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="w-full text-center"
+  >
+    <button
+      disabled={false}
+      type="submit"
+    >
+      Submit
+    </button>
+  </div>
+</form>
+`;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import React from 'react'
 import Head from 'next/head'
 import Header from './header'
@@ -18,4 +19,9 @@ export default function Layout({ children, title = 'Home | Xerorama' }) {
       <div>{children}</div>
     </div>
   )
+}
+
+Layout.propTypes = {
+  children: PropTypes.object,
+  title: PropTypes.string
 }
