@@ -13,7 +13,10 @@ module.exports = {
         blueXero: '#3F52B5',
         greyXero: '#F4F6F8',
         greyDarkXero: '#867783',
-        googleButtonXero: '#D5D5D5'
+        googleButtonXero: '#D5D5D5',
+        formButtonXero: '#FF4B2B',
+        formGreyXero: '#eee',
+        formRoseXero: '#ff416c'
       },
       maxHeight: {
         xs: '20rem',
