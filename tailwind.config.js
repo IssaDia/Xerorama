@@ -16,7 +16,8 @@ module.exports = {
         googleButtonXero: '#D5D5D5',
         formButtonXero: '#FF4B2B',
         formGreyXero: '#eee',
-        formRoseXero: '#ff416c'
+        formRoseXero: '#ff416c',
+        formBlackXero: '#333'
       },
       maxHeight: {
         xs: '20rem',
