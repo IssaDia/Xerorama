@@ -13,7 +13,7 @@ export default function Layout({ children, title = 'Home | Xerorama' }) {
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
         />
       </Head>
-      <div>{children}</div>
+      <div className="container">{children}</div>
     </div>
   )
 }

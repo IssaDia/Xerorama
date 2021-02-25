@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import FacebookIcon from '../src/icons/facebook'
 import GoogleIcon from '../src/icons/google'
 
@@ -70,14 +71,19 @@ export default function Signup() {
   }
 
   return (
-    <div className="form-container sign-up-container">
+    <div className="form-container sign-up-container absolute top-0 h-full">
       <FormProvider {...methods}>
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="space-y-3 bg-white flex flex-col items-center justify-center h-full px-14">
           <h1 className="font-bold m-0">Create Account</h1>
+
           <div className="social-container">
             <Link href="/" className="social">
               <a onClick={handleFacebook}>
-                <span>{FacebookIcon}</span>
+                <span>
+                  <img src={GoogleIcon} />
+                </span>
               </a>
             </Link>
             <Link href="/" className="social">
@@ -94,6 +100,8 @@ export default function Signup() {
             ref={register}
             inputRef={register}
           />
+          {errors.email && <span className="text-red-700 text-xs">{errors.email.message}</span>}
+
           <InputForm
             label="Password"
             name="password"
@@ -101,6 +109,9 @@ export default function Signup() {
             ref={register}
             inputRef={register}
           />
+          {errors.password && (
+            <span className="text-red-700  text-xs">{errors.password.message}</span>
+          )}
           {errors.password && (
             <span className="text-red-700  text-xs">{errors.password.message}</span>
           )}
