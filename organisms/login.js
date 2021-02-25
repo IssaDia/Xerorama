@@ -61,11 +61,15 @@ export default function Login(props) {
             onSubmit={handleSubmit(onSubmit)}
             className="space-y-3 bg-white flex flex-col items-center justify-center h-full px-14">
             <h1 className="font-bold m-0">Sign in</h1>
-            <div className="social-container">
-              <a href="#" className="social text-formBlackXero text-sm no-underline">
+            <div className="my-5">
+              <a
+                href="#"
+                className="border border-gray-300 rounded-full inline-flex justify-center items-center mx-1.5 h-10 w-10">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" className="social text-formBlackXero text-sm no-underline">
+              <a
+                href="#"
+                className="border border-gray-300 rounded-full inline-flex justify-center items-center mx-1.5 h-10 w-10">
                 <i className="fab fa-google-plus-g"></i>
               </a>
             </div>
@@ -97,11 +101,11 @@ export default function Login(props) {
           </form>
         </FormProvider>
       </div>
-      <div className="overlay-container">
-        <div className="overlay">
-          <div className="overlay-panel overlay-left">
-            <h1 className="font-bold">Welcome Back!</h1>
-            <p className="text-sm font-thin leading-5 tracking-wide my-5">
+      <div className="overlay-container absolute top-0 left-1/2 w-1/2 h-full overflow-hidden">
+        <div className="overlay text-white relative h-full bg-no-repeat bg-cover -left-full">
+          <div className="overlay-panel overlay-left absolute flex items-center justify-center flex-col py-10 text-center top-0 h-full w-1/2">
+            <h1 className="text-5xl font-black">Welcome Back!</h1>
+            <p className="text-xs font-thin leading-5 tracking-wide my-5">
               To keep connected with us please login with your personal info
             </p>
             <button
@@ -110,9 +114,9 @@ export default function Login(props) {
               Sign In
             </button>
           </div>
-          <div className="overlay-panel overlay-right">
-            <h1 className="font-bold m-0">Hello, Friend!</h1>
-            <p className="text-sm font-thin leading-5 tracking-wide my-5">
+          <div className="overlay-panel overlay-right absolute flex items-center justify-center flex-col py-10 text-center top-0 h-full w-1/2 right-0">
+            <h1 className="text-5xl font-black">Hello, Friend!</h1>
+            <p className="text-xs font-thin leading-5 tracking-wide my-5">
               Enter your personal details and start journey with us
             </p>
             <button

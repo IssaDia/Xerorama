@@ -78,16 +78,20 @@ export default function Signup() {
           className="space-y-3 bg-white flex flex-col items-center justify-center h-full px-14">
           <h1 className="font-bold m-0">Create Account</h1>
 
-          <div className="social-container">
-            <Link href="/" className="social">
-              <a onClick={handleFacebook}>
+          <div className="my-5">
+            <Link href="/">
+              <a
+                onClick={handleFacebook}
+                className="social border border-gray-300 rounded-full inline-flex justify-center items-center mx-1.5 h-10 w-10">
                 <span>
                   <img src={GoogleIcon} />
                 </span>
               </a>
             </Link>
             <Link href="/" className="social">
-              <a onClick={handleGoogle}>
+              <a
+                onClick={handleGoogle}
+                className="social border border-gray-300 rounded-full inline-flex justify-center items-center mx-1.5 h-10 w-10">
                 <span>{GoogleIcon}</span>
               </a>
             </Link>
@@ -109,9 +113,6 @@ export default function Signup() {
             ref={register}
             inputRef={register}
           />
-          {errors.password && (
-            <span className="text-red-700  text-xs">{errors.password.message}</span>
-          )}
           {errors.password && (
             <span className="text-red-700  text-xs">{errors.password.message}</span>
           )}
