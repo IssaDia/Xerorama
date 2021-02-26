@@ -7,15 +7,7 @@ body,
 #__next {
   height: 100%;
   width: 100%;
-  background: #f6f5f7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Montserrat',
-    sans-serif;
-  height: 100vh;
-  margin: -20px 0 50px;
+
 
 }
 
@@ -31,7 +23,7 @@ body,
 }
 
 
-.container.right-panel-active .sign-in-container {
+.contain.right-panel-active .sign-in-container {
   transform: translateX(100%);
 }
 
@@ -48,7 +40,7 @@ body,
   z-index: 1;
 }
 
-.container.right-panel-active .sign-up-container {
+.contain.right-panel-active .sign-up-container {
   transform: translateX(100%);
   opacity: 1;
   z-index: 5;
@@ -76,7 +68,7 @@ body,
   z-index: 100;
 }
 
-.container.right-panel-active .overlay-container {
+.contain.right-panel-active .overlay-container {
   transform: translateX(-100%);
 }
 
@@ -90,7 +82,7 @@ body,
   transition: transform 0.6s ease-in-out;
 }
 
-.container.right-panel-active .overlay {
+.contain.right-panel-active .overlay {
   transform: translateX(50%);
 }
 
@@ -104,7 +96,7 @@ body,
   transform: translateX(-20%);
 }
 
-.container.right-panel-active .overlay-left {
+.contain.right-panel-active .overlay-left {
   transform: translateX(0);
 }
 
@@ -113,6 +105,6 @@ body,
   transform: translateX(0);
 }
 
-.container.right-panel-active .overlay-right {
+.contain.right-panel-active .overlay-right {
   transform: translateX(20%);
 }

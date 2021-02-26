@@ -71,7 +71,7 @@ export default function Signup() {
   }
 
   return (
-    <div className="form-container sign-up-container absolute top-0 h-full">
+    <div className="form-container sign-up-container absolute h-full">
       <FormProvider {...methods}>
         <form
           onSubmit={handleSubmit(onSubmit)}

@@ -55,7 +55,7 @@ export default function Login(props) {
 
   return (
     <>
-      <div className="form-container sign-in-container absolute top-0 h-full">
+      <div className="form-container sign-in-container absolute h-full">
         <FormProvider {...methods}>
           <form
             onSubmit={handleSubmit(onSubmit)}
@@ -80,6 +80,7 @@ export default function Login(props) {
               type="email"
               ref={register}
               inputRef={register}
+              data-testid="mail-input"
             />
             <InputForm
               label="Password"
@@ -105,7 +106,7 @@ export default function Login(props) {
         <div className="overlay text-white relative h-full bg-no-repeat bg-cover -left-full">
           <div className="overlay-panel overlay-left absolute flex items-center justify-center flex-col py-10 text-center top-0 h-full w-1/2">
             <h1 className="text-5xl font-black">Welcome Back!</h1>
-            <p className="text-xs font-thin leading-5 tracking-wide my-5">
+            <p className="text-xs font-thin leading-5 tracking-wide my-5" data-testid="ancestor">
               To keep connected with us please login with your personal info
             </p>
             <button

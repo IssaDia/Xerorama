@@ -3,7 +3,7 @@ import React from 'react'
 import Head from 'next/head'
 export default function Layout({ children, title = 'Home | Xerorama' }) {
   return (
-    <div className="bg-greyXero font-roboto">
+    <>
       <Head>
         <title>{title}</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -13,8 +13,8 @@ export default function Layout({ children, title = 'Home | Xerorama' }) {
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
         />
       </Head>
-      <div className="container">{children}</div>
-    </div>
+      <div className="container-fluid bg-greyXero">{children}</div>
+    </>
   )
 }
 
