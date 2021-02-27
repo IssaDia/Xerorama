@@ -18,7 +18,7 @@ function HomePage(props) {
       <Layout title="Login | Xerorama">
         <Header />
         <div
-          className={`contain mt-24 bg-white rounded-lg relative overflow-hidden w-screen	max-w-full min-h-screen shadow-md ${
+          className={`contain mx-auto mt-24 bg-white rounded-lg relative overflow-hidden	max-w-full min-h-screen shadow-md ${
             isActive && 'right-panel-active'
           }`}>
           <Login parentCallback={handleCallback} />

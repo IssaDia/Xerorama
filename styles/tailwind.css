@@ -17,6 +17,11 @@ body,
 
 }
 
+.contain {
+  width: 720px;
+  min-height: 480px;
+}
+
 .form-container {
 
   transition: all 0.6s ease-in-out;

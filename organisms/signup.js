@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
-import FacebookIcon from '../src/icons/facebook'
-import GoogleIcon from '../src/icons/google'
 
 import { useAuth } from '../src/contexts/auth-provider-firebase'
 import { useRouter } from 'next/router'
@@ -14,6 +11,10 @@ import { useForm, FormProvider } from 'react-hook-form'
 
 import InputForm from '../components/atoms/login-form/input-form'
 import BasicButton from '../components/molecules/basic-button'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faGooglePlus } from '@fortawesome/free-brands-svg-icons'
 
 const validationSchema = yup.object({
   email: yup.string().required('Please enter the required field'),
@@ -31,13 +32,12 @@ const validationSchema = yup.object({
 })
 
 export default function Signup() {
-  const { login, loginGoogle, loginFacebook, currentUser } = useAuth()
+  const { signup, loginGoogle, loginFacebook, currentUser } = useAuth()
   const methods = useForm({
     resolver: yupResolver(validationSchema)
   })
   const { handleSubmit, register, errors } = methods
   const [submitting, setSubmitting] = useState(false)
-  const { signup } = useAuth()
   const router = useRouter()
 
   const onSubmit = async (data) => {
@@ -79,22 +79,16 @@ export default function Signup() {
           <h1 className="font-bold m-0">Create Account</h1>
 
           <div className="my-5">
-            <Link href="/">
-              <a
-                onClick={handleFacebook}
-                className="social border border-gray-300 rounded-full inline-flex justify-center items-center mx-1.5 h-10 w-10">
-                <span>
-                  <img src={GoogleIcon} />
-                </span>
-              </a>
-            </Link>
-            <Link href="/" className="social">
-              <a
-                onClick={handleGoogle}
-                className="social border border-gray-300 rounded-full inline-flex justify-center items-center mx-1.5 h-10 w-10">
-                <span>{GoogleIcon}</span>
-              </a>
-            </Link>
+            <span
+              onClick={handleFacebook}
+              className="border border-gray-300 rounded-full inline-flex justify-center items-center mx-1.5 h-10 w-10">
+              <FontAwesomeIcon icon={faFacebook} />
+            </span>
+            <span
+              onClick={handleGoogle}
+              className="border border-gray-300 rounded-full inline-flex justify-center items-center mx-1.5 h-10 w-10">
+              <FontAwesomeIcon icon={faGooglePlus} />
+            </span>
           </div>
           <span className="text-xs">or use your email for registration</span>
           <InputForm

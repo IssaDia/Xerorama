@@ -10,6 +10,11 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import InputForm from '../components/atoms/login-form/input-form'
 import BasicButton from '../components/molecules/basic-button'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faGooglePlus } from '@fortawesome/free-brands-svg-icons'
+import { SpaTwoTone } from '@material-ui/icons'
+
 const validationSchema = yup.object({
   email: yup
     .string()
@@ -30,7 +35,7 @@ export default function Login(props) {
   })
   const { handleSubmit, register, errors } = methods
   const [submitting, setSubmitting] = useState(false)
-  const { login } = useAuth()
+  const { login, loginGoogle, loginFacebook, currentUser } = useAuth()
   const router = useRouter()
   const [active, setActive] = useState(false)
   const onSubmit = async (data) => {
@@ -53,6 +58,26 @@ export default function Login(props) {
     props.parentCallback(!active)
   }
 
+  const handleGoogle = async () => {
+    try {
+      await loginGoogle()
+      currentUser && router.push('/dashboard')
+    } catch (error) {
+      console.log(error)
+    }
+    setSubmitting(true)
+  }
+
+  const handleFacebook = async () => {
+    try {
+      await loginFacebook()
+      currentUser && router.push('/dashboard')
+    } catch (error) {
+      console.log(error)
+    }
+    setSubmitting(true)
+  }
+
   return (
     <>
       <div className="form-container sign-in-container absolute h-full">
@@ -62,16 +87,16 @@ export default function Login(props) {
             className="space-y-3 bg-white flex flex-col items-center justify-center h-full px-14">
             <h1 className="font-bold m-0">Sign in</h1>
             <div className="my-5">
-              <a
-                href="#"
+              <span
+                onClick={handleFacebook}
                 className="border border-gray-300 rounded-full inline-flex justify-center items-center mx-1.5 h-10 w-10">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a
-                href="#"
+                <FontAwesomeIcon icon={faFacebook} />
+              </span>
+              <span
+                onClick={handleGoogle}
                 className="border border-gray-300 rounded-full inline-flex justify-center items-center mx-1.5 h-10 w-10">
-                <i className="fab fa-google-plus-g"></i>
-              </a>
+                <FontAwesomeIcon icon={faGooglePlus} />
+              </span>
             </div>
             <span className="text-xs">or use your account</span>
             <InputForm
@@ -105,8 +130,8 @@ export default function Login(props) {
       <div className="overlay-container absolute top-0 left-1/2 w-1/2 h-full overflow-hidden">
         <div className="overlay text-white relative h-full bg-no-repeat bg-cover -left-full">
           <div className="overlay-panel overlay-left absolute flex items-center justify-center flex-col py-10 text-center top-0 h-full w-1/2">
-            <h1 className="text-5xl font-black">Welcome Back!</h1>
-            <p className="text-xs font-thin leading-5 tracking-wide my-5" data-testid="ancestor">
+            <h1 className="text-4xl font-black">Welcome Back!</h1>
+            <p className="text-sm font-thin leading-5 tracking-wide my-5" data-testid="ancestor">
               To keep connected with us please login with your personal info
             </p>
             <button
@@ -116,8 +141,8 @@ export default function Login(props) {
             </button>
           </div>
           <div className="overlay-panel overlay-right absolute flex items-center justify-center flex-col py-10 text-center top-0 h-full w-1/2 right-0">
-            <h1 className="text-5xl font-black">Hello, Friend!</h1>
-            <p className="text-xs font-thin leading-5 tracking-wide my-5">
+            <h1 className="text-4xl font-black">Hello, Friend!</h1>
+            <p className="text-sm font-thin leading-5 tracking-wide my-5">
               Enter your personal details and start journey with us
             </p>
             <button
