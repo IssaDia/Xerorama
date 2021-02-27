@@ -12,7 +12,7 @@ suivre ce tutoriel [ici](https://nextjs.org/docs)
 2/ Récupérer le code source (sur votre machine) <br />
 git clone https://github.com/IssaDia/Xerorama.git
 
-3/ Créer un compte Contentful et connexter Contentful à son application <br />
+3/ Créer un compte Firebase et connecter Firebase à son application <br />
 suivre ce tutoriel [ici](https://vercel.com/guides/deploying-next-and-contentful-with-vercel)
 
 5/ Renommer le fichier .env.exemple en .env et compléter le fichier avec vos identifiants <br />
